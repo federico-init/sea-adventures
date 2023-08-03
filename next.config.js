@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
     additionalData: `
-    @import ".src/styles/helpers/devices.scss";
-    @import ".src/styles/helpers/mixins.scss";
-    @import ".src/styles/variables/colors.scss";
-    @import ".src/styles/variables/typography.scss";
+    @import "@/styles/helpers/devices.scss";
+    @import "@/styles/helpers/mixins.scss";
+    @import "@/styles/variables/colors.scss";
+    @import "@/styles/variables/typography.scss";
     `,
   },
 };
