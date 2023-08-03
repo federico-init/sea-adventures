@@ -1,0 +1,101 @@
+.Card {
+  background-color: $colorPrimary-light;
+  width: 330px;
+  height: 310px;
+  padding: 20px 20px;
+  border-radius: 12px;
+  position: relative;
+  // @include flex-vrt(flex-start, flex-start, 5px);
+
+  .priceValue,
+  .priceCurrency {
+    font-size: $h4-size;
+    font-weight: $h3-weight;
+  }
+
+  .title {
+    font-size: $h3-size;
+    font-weight: $h3-weight;
+  }
+
+  .departure {
+    @include flex-hrz(space-between, center, 0);
+    margin: 5px 0;
+
+    .departureInfo {
+      @include flex-vrt(center, flex-start, 0);
+
+      .departureText {
+        color: $colorSecondary-light;
+        text-transform: uppercase;
+      }
+
+      .departurePort {
+        font-size: 20px;
+      }
+    }
+
+    .itineraryInfo {
+      @include flex-vrt(center, flex-start, 0);
+    }
+
+    .departurePort,
+    .itineraryInfo {
+      font-weight: $h3-weight;
+    }
+  }
+
+  .dates {
+    @include flex-hrz(space-between, center, 0);
+    margin: 5px 0;
+
+    .departureDate,
+    .arrivalDate {
+      @include flex-vrt(center, flex-start, 0);
+    }
+
+    img {
+      height: 24px;
+      width: auto;
+    }
+
+    .departureTime,
+    .arrivalTime {
+      color: $colorSecondary-light;
+    }
+  }
+
+  .reservationsInfo {
+    @include flex-vrt(center, flex-start, 0);
+
+    .reservations,
+    .availability {
+      @include flex-hrz(center, center, 5px);
+      span {
+        color: $colorSecondary-light;
+      }
+    }
+
+    .reservations {
+      font-size: $h5-size;
+    }
+
+    .reservationsAvailable {
+      font-weight: $h3-weight;
+    }
+  }
+
+  .button {
+    text-transform: uppercase;
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    color: $colorText;
+    background-color: $colorPrimary-dark;
+    border-radius: 6px;
+    font-size: $p-size;
+  }
+}

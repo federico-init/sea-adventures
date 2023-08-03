@@ -1,0 +1,10 @@
+.CardsList {
+  @include flex-hrz(center, center, 20px);
+  flex-wrap: wrap;
+  padding: 80px 100px;
+
+  @include xs() {
+    @include flex-vrt(center, center, 20px);
+    flex-wrap: wrap;
+  }
+}
