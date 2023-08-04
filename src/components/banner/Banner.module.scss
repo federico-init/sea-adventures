@@ -52,8 +52,8 @@
         font-weight: $h3-weight;
 
         @include xs() {
-          font-size: $h4-size;
-          font-weight: $h4-weight;
+          font-size: $h1-size;
+          font-weight: $h3-weight;
         }
       }
     }
