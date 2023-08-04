@@ -13,28 +13,16 @@ const Banner = () => {
       </div>
       <div className={styles.numbersWrapper}>
         <div className={styles.numbersItem}>
-          <div className={styles.numbersText}>
-            <h3>+20</h3>
-          </div>
-          <div className={styles.numbersDesc}>
-            <h3>Destinazioni</h3>
-          </div>
+          <h3 className={styles.numbersText}>+20</h3>
+          <h3 className={styles.numbersDesc}>Destinazioni</h3>
         </div>
         <div className={styles.numbersItem}>
-          <div className={styles.numbersText}>
-            <h3>+15</h3>
-          </div>
-          <div className={styles.numbersDesc}>
-            <h3>Imbarcazioni</h3>
-          </div>
+          <h3 className={styles.numbersText}>+15</h3>
+          <h3 className={styles.numbersDesc}>Imbarcazioni</h3>
         </div>
         <div className={styles.numbersItem}>
-          <div className={styles.numbersText}>
-            <h3>+40</h3>
-          </div>
-          <div className={styles.numbersDesc}>
-            <h3>Itinerari</h3>
-          </div>
+          <h3 className={styles.numbersText}>+40</h3>
+          <h3 className={styles.numbersDesc}>Itinerari</h3>
         </div>
       </div>
     </section>

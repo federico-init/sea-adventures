@@ -35,9 +35,8 @@ const Card = ({ data }) => {
         <span className={styles.priceCurrency}>{data.budget.currencyCode}</span>
         <span className={styles.priceType}>{` ${data.budget.costType}`}</span>
       </div>
-      <div className={styles.title}>
-        <h3>{data.title}</h3>
-      </div>
+      <h3 className={styles.title}>{data.title}</h3>
+
       <div className={styles.departure}>
         <div className={styles.departureInfo}>
           <p className={styles.departureText}>partenza da</p>
