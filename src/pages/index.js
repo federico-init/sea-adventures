@@ -7,6 +7,7 @@ import Hero from "@/components/hero";
 import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import CardsList from "@/components/cardsList";
+import Adventures from "@/components/adventures";
 
 // import style
 import styles from "@/styles/Home.module.scss";
@@ -24,6 +25,7 @@ export default function Home() {
       <Hero />
       <CardsList />
       <Banner />
+      <Adventures />
       <Footer />
     </>
   );

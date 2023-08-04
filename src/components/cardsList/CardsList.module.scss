@@ -1,15 +1,16 @@
 .CardsList {
   @include flex-vrt(center, center, 20px);
-  margin-bottom: 100px;
+  margin: 80px 90px 100px;
 
   .Cards {
-    @include flex-hrz(center, center, 20px);
+    @include flex-hrz(space-between, center, 20px);
+    margin-bottom: 80px;
     flex-wrap: wrap;
-    padding: 80px 100px;
 
     @include xs() {
       @include flex-vrt(center, center, 20px);
       flex-wrap: wrap;
+      margin: 30px 25px;
     }
   }
 
@@ -29,6 +30,11 @@
     }
     &:active {
       scale: 0.99;
+    }
+
+    @include xs() {
+      height: 50px;
+      width: 260px;
     }
   }
 }
