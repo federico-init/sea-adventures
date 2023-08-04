@@ -2,7 +2,11 @@
 import Head from "next/head";
 
 // import component
-import Header from "@/components/Header";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Banner from "@/components/banner";
+import Footer from "@/components/footer";
+import CardsList from "@/components/cardsList";
 
 // import style
 import styles from "@/styles/Home.module.scss";
@@ -17,7 +21,10 @@ export default function Home() {
         <link rel="icon" href="/images/logo.svg" />
       </Head>
       <Header />
-      <main>Hello there!</main>
+      <Hero />
+      <CardsList />
+      <Banner />
+      <Footer />
     </>
   );
 }
