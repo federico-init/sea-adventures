@@ -97,5 +97,13 @@
     background-color: $colorPrimary-dark;
     border-radius: 6px;
     font-size: $p-size;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $colorSecondary-dark;
+    }
+    &:active {
+      scale: 0.99;
+    }
   }
 }
