@@ -48,8 +48,8 @@
 
       .numbersText,
       .numbersDesc {
-        font-size: $h3-size;
-        font-weight: $h5-weight;
+        font-size: $h1-size;
+        font-weight: $h3-weight;
 
         @include xs() {
           font-size: $h4-size;
