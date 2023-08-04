@@ -21,6 +21,13 @@ const Card = ({ data }) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
+  const checkLastLetter = (string) => {
+    if (string.charAt(string.length - 1) === "a")
+      return string.slice(0, -1) + "e";
+    if (string === "room") return "cabine";
+    else return string;
+  };
+
   return (
     <div className={styles.Card}>
       <div className={styles.price}>
@@ -71,7 +78,7 @@ const Card = ({ data }) => {
         <div className={styles.reservations}>
           <p className={styles.reservationsNumber}>{data.reservations}</p>
           <p className={styles.reservationsType}>
-            {capitalizeFirstLetter(data.reservationsType)}
+            {capitalizeFirstLetter(checkLastLetter(data.reservationsType))}
           </p>
         </div>
         <div className={styles.availability}>

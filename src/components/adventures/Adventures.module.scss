@@ -1,0 +1,19 @@
+.Adventures {
+  @include flex-vrt(center, flex-start, 50px);
+  margin: 60px 90px 70px;
+
+  .title {
+    font-size: $h2-size;
+    font-weight: 500;
+  }
+
+  .Cards {
+    @include flex-hrz(space-between, center, 20px);
+    flex-wrap: wrap;
+
+    @include xs() {
+      @include flex-vrt(center, center, 20px);
+      margin: 30px 25px;
+    }
+  }
+}
