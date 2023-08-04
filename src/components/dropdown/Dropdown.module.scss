@@ -1,0 +1,35 @@
+.dropdownContainer {
+  position: relative;
+
+  .dropdownBox {
+    @include flex-hrz(space-between, center, 0);
+    cursor: pointer;
+    border: 1px solid $colorPrimary-dark;
+    padding: 15px;
+    width: 300px;
+  }
+
+  .options {
+    border: 1px solid $colorPrimary-dark;
+    border-top: none;
+    position: absolute;
+    width: 100%;
+    background-color: $colorBackground;
+    visibility: hidden;
+    opacity: 0;
+    list-style-type: none;
+    transition: all 0.35s ease;
+    z-index: 1;
+    padding: 10px 15px;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .option {
+      cursor: pointer;
+      padding: 5px 0;
+    }
+  }
+}
