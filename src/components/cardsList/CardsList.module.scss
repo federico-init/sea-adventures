@@ -2,6 +2,16 @@
   @include flex-vrt(center, flex-start, 20px);
   margin: 80px 90px 100px;
 
+  .dropdowns {
+    width: 100%;
+    @include flex-hrz(space-between, center, 0);
+    margin-bottom: 20px;
+
+    @include xs() {
+      @include flex-vrt(center, center, 10px);
+    }
+  }
+
   .Cards {
     @include flex-hrz(space-between, center, 20px);
     margin-bottom: 80px;
@@ -25,17 +35,21 @@
         font-weight: 500;
       }
     }
+  }
 
-    .groupedCards {
-      @include flex-hrz(flex-start, center, 20px);
-      flex-wrap: wrap;
-      margin-top: 30px;
-      margin-bottom: 60px;
+  .groupedCards {
+    @include flex-hrz(flex-start, center, 60px);
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 60px;
 
-      @include xs() {
-        @include flex-vrt(center, center, 20px);
-        margin: 30px 25px;
-      }
+    &:first-child {
+      left: 0;
+    }
+
+    @include xs() {
+      @include flex-vrt(center, center, 20px);
+      margin: 30px 25px;
     }
   }
 
