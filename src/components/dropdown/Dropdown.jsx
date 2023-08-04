@@ -4,13 +4,10 @@ import { useState } from "react";
 // import Next
 import Image from "next/image";
 
-// import data
-import { options } from "@/mock/options";
-
 // import style
 import styles from "./Dropdown.module.scss";
 
-const Dropdown = ({ handleChange }) => {
+const Dropdown = ({ options, handleChange }) => {
   const [open, setOpen] = useState(false);
 
   const [selected, setSelected] = useState("Mostra tutti");
